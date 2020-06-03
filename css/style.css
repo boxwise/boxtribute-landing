@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+
+aside {
+  float: right;
+  width: 20%;
+}
+
+#logo {
+  height: 16%;
+  width: 96%;
+  float: left;
+  margin-bottom: 12%;
+}
+
+#sidebar {
+  position: fixed;
+  background: white;
+  height: 100%;
+  width: 20%;
+  transition: 400ms;
+}
+
+#sidebar ul {
+  list-style: none;
+  margin-top: 30px;
+  margin-left: 15%;
+}
+
+#sidebar ul li {
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+#sidebar ul li a {
+  color: #29335f;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.toggle-btn {
+  position: absolute;
+  padding: 8px 8px;
+  left: 200;
+  background: #e1e1e1;
+  top: 10px;
+  cursor: pointer;
+}
+
+.toggle-btn span {
+  width: 30px;
+  height: 2px;
+  background: #444;
+  display: block;
+  margin-bottom: 6px;
+}
+.toggle-btn span:last-child {
+  margin-bottom: 0;
+}
+
+section {
+  margin-left: 1.25%;
+  /* width: 100%; */
+  height: 100%;
+}
+
+#story {
+  text-align: center;
+  background: #aacfe3;
+}
+#why {
+  text-align: center;
+  background: #f4e6a0;
+}
+#who {
+  text-align: center;
+  background: #315c88;
+}
+#partners {
+  text-align: center;
+  background: #e4aa4f;
+}
+#join {
+  text-align: center;
+  background: #f37167;
+}
