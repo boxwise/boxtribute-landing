@@ -13,8 +13,8 @@ html {
 }
 
 #logo {
-  height: 16%;
-  width: 100%;
+  height: 120px;
+  width: 243px;
 }
 
 #sidebar {
@@ -83,6 +83,8 @@ section {
   color: #29335f;
   padding: 16px;
   padding-bottom: 30px;
+  /* width: 510px;
+  height: 248px; */
   width: 50%;
   opacity: 80%;
   margin: auto;
@@ -117,6 +119,18 @@ section {
 
 #story-start #headline-end {
   color: #ef404a;
+}
+
+#story-start #description {
+  margin-top: 35px;
+  width: 437px;
+  height: 300px;
+  text-align: left;
+  font-family: 'Open Sans', serif;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #29335f;
+  opacity: 1;
 }
 
 #why {
