@@ -1,3 +1,5 @@
+/* General page and sidebar styling */
+
 * {
   margin: 0;
   padding: 0;
@@ -43,14 +45,18 @@ html {
   padding-left: 20px;
 }
 
+/* styling for each individual page */
+
 section {
   padding-top: 8%;
-  padding-left: 7%;
-  width: 73%;
-  height: 86%;
+  padding-left: 95px;
+  padding-right: 70px;
+  width: 70%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: 'Chivo', serif;
 }
+
+/* styling of common elements for each page */
 
 #headline-start {
   font-family: 'Chivo', serif;
@@ -66,44 +72,78 @@ section {
   font-size: 40pt;
 }
 
-#story-drive {
+#quote {
+  text-align: left;
+  letter-spacing: 0px;
+  font-family: 'Open Sans', serif;
+  font-style: italic;
+  font-size: 21.33px;
+  color: #315c88;
+}
+
+#quote #source {
+  font-style: normal;
+}
+
+#subtitle {
+  text-align: left;
+  font-family: 'Open Sans', serif;
+  margin-top: 10px;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #29335f;
+  width: 95%;
+}
+
+#subheader {
+  padding-top: 35px;
+  text-align: left;
+  font-family: 'Open Sans', serif;
+  letter-spacing: 0px;
+  font-size: 16px;
+  color: #29335f;
+  /* padding-bottom: 25px; */
+}
+
+#subheader #title {
+  color: #ef404a;
+  font-size: 22px;
+}
+
+/* styling for landing page */
+
+#landing {
   background-color: #aacfe3;
   background-image: url('../assets/hero_image_shop.png');
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
-  padding-left: 3.5%;
-  padding-right: 3.5%;
+  padding-bottom: 20%;
+  padding-top: 25px;
 }
 
-#story-drive #info {
-  background-color: #aacfe3;
+#landing #info {
+  background-color: rgba(132, 134, 137, 0.6);
   font-family: 'Open Sans', sans-serif;
-  font-size: 12pt;
-  color: #29335f;
-  padding: 16px;
+  font-weight: bold;
+  padding: 10px;
   padding-bottom: 30px;
-  /* width: 510px;
-  height: 248px; */
-  width: 50%;
-  opacity: 80%;
-  margin: auto;
-  margin-top: 23%;
+  width: 85%;
+  margin-left: 10%;
   text-align: left;
 }
 
-#story-drive #info li {
-  margin-left: 15px;
+#landing #info #text {
+  font-size: 38px;
+  color: white;
 }
 
-#story-drive #support {
+#landing #support {
   color: white;
   background-color: black;
   border: 0;
-  /* two below only needed if div */
-  width: 25%;
-  margin: auto;
-  margin-top: 2%;
+  width: 28%;
+  margin-top: 20%;
   border-radius: 30px;
   padding: 18px;
   padding-right: 25px;
@@ -113,25 +153,40 @@ section {
   font-size: 20px;
 }
 
-#story-start {
-  background: #aacfe3;
+/* styling for drive page */
+
+#story {
+  background-color: #aacfe3;
 }
 
-#story-start #headline-end {
+#story #headline-end {
   color: #ef404a;
 }
 
-#story-start #description {
-  margin-top: 35px;
-  width: 437px;
-  height: 300px;
-  text-align: left;
-  font-family: 'Open Sans', serif;
+#story #description {
+  background-color: #aacfe3;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  color: #29335F;
+  width: 93%;
   letter-spacing: 0px;
-  color: #29335f;
-  opacity: 1;
+  margin-top: 35px;
+  text-align: left;
+  padding-bottom: 30%;
 }
+
+#story #description li {
+  margin-left: 15px;
+}
+
+/* styling for start page */
+
+#story #description #short {
+  width: 47%;
+  /* padding-bottom: 28%; */
+}
+
+/* styling for why it works pages */
 
 #why {
   background: #f4e6a0;
@@ -145,21 +200,155 @@ section {
   color: #ef404a;
 }
 
+#why #quote {
+  width: 70%;
+  margin-top: 2%;
+  margin-left: 100px;
+}
+
+#why #subheader {
+  margin-left: 10px;
+}
+
+#why #elements {
+  display: flex;
+}
+
+#why #elements #stat {
+  font-family: 'Chivo', serif;
+  font-weight: bold;
+  font-size: 60px;
+  letter-spacing: 0px;
+  color: #315C88;
+  text-align: center;
+  margin-top: 35px;
+  margin-left: 50px;
+  margin-bottom: 35px;
+}
+
+#why #elements #stat #stat-label {
+  font-size: 21px;
+  letter-spacing: 0px;
+  margin: auto;
+  color: #315C88;
+  width: 300px;
+}
+
+#why #elements #bar-chart {
+  height: 230px;
+  flex-basis: 483px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: white;
+  margin-left: 50px;
+  margin-bottom: 10%;
+}
+
+#why #outreach {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 21.33px;
+  width: 65%;
+  font-weight: lighter;
+  text-align: center;
+  margin:auto;
+  margin-top: 40px;
+  color: #29335F;
+  padding-bottom: 10%;
+}
+
+#why #checkbox {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+/* styling for who we are page */
+
 #who {
   background: #315c88;
 }
 
 #who #headline-end {
-  color: #ef404a;
+  color: #e4aa4f;
 }
 
+#who #profiles {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+#who #profiles #profile {
+  padding-right: 60px;
+  padding-top: 3%;
+  color: #AACFE3;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+#who #profiles #profile strong {
+  color: white;
+  font-size: 16px;
+}
+
+/* styling for partners page */
+
 #partners {
-  background: #e4aa4f;
+  background: #AACFE3;
 }
 
 #partners #headline-start {
-  color: #29335f;
+  color: #000000;
 }
+
+#partners #elements {
+  display: flex;
+}
+
+#partners #quote {
+  width: 85%;
+  margin-top: 4%;
+  margin-left: 100px;
+}
+
+#partners #info {
+  width: 50%;
+}
+
+#partners #info #title {
+  margin-top: 35px;
+  color: #EF404A;
+  text-align: center;
+  font-family: "Chivo", serif;
+  font-weight: lighter;
+  font-size: 38px;
+}
+
+#partners #info #description {
+  margin-right: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+#partners #support {
+  margin-top: 4%;
+  color: #29335F;
+  font-family: "Open Sans", sans-serif;
+  font-size: 28.5px;
+  margin-left: 13%;
+  font-weight: bold;
+}
+
+#partners #outreach {
+  color: #29335F;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 20px;
+  padding-bottom: 10%;
+}
+
+/* styling for join us page  */
 
 #join {
   background: #f37167;
@@ -167,9 +356,22 @@ section {
 
 #join #headline-start {
   color: #000000;
-  font-size: 32pt;
 }
 
-#join #headline-end {
-  font-size: 32pt;
+#join #description {
+  font-family: 'Open Sans', serif;
+  margin-top: 35px;
+  padding-bottom: 10px;
+}
+
+#join #description strong {
+  color: white;
+}
+
+#join #subheader {
+  color:black;
+}
+
+#join #subheader strong{
+  color: white;
 }
