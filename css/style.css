@@ -67,7 +67,7 @@ section {
   font-family: 'Chivo', serif;
 }
 
-@media (max-width: 750px){
+@media (max-width: 800px){
   #sidebar {
     display: none;
     padding-right: 0px;
@@ -162,7 +162,7 @@ section {
   color: white;
 }
 
-@media (max-width: 650px){
+@media (max-width: 800px){
   #landing #info {
       margin-left: 10px;
   }
@@ -219,7 +219,7 @@ section {
   /* padding-bottom: 28%; */
 }
 
-@media (max-width: 650px){
+@media (max-width: 800px){
   #story #description #short {
     width: 93%;
   }
@@ -253,7 +253,7 @@ section {
   display: flex;
 }
 
-@media (max-width: 650px){
+@media (max-width: 800px){
   #why #elements {
       display: inline;
   }
