@@ -13,7 +13,8 @@
     <aside>
       <nav id="sidebar">
         <a href="#landing"><img src="assets/Boxtribute_Logo.jpg" id="logo" alt="Logo"/></a>
-        <ul>
+        <div id="close" onclick="closeNav()">×</div>
+        <ul id="navOptions">
           <li><a href="#story">OUR STORY</a></li>
           <li><a href="#why">WHY IT WORKS</a></li>
           <li><a href="#who">WHO WE ARE</a></li>
@@ -34,13 +35,26 @@
     </aside>
     <div id="header">
         <img src="assets/Boxtribute_Logo.jpg" id="logo" alt="logo" />
-        <button class="hamburger" type="button">
+        <button class="hamburger" type="button" onclick="openNav()">
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
         </button>
     </div>
   
+    <script>
+        function openNav() {
+          document.getElementById("sidebar").style.display = "block";
+          document.getElementById("logo").style.display="none";
+          document.getElementById("navOptions").style.marginTop = "120px";
+          document.getElementById("close").style.display="inline";
+        }
+        
+        function closeNav() {
+          document.getElementById("sidebar").style.display = "none";
+        }
+    </script>
+
     <div>
     <section id="landing" class="container">
         <div id="info">
@@ -51,7 +65,6 @@
 
     <section id="story" class="container">
         <span id="headline-start" >OUR STORY &nbsp</span> <span id="headline-end"> WHAT DRIVES US</span>
-        <br /><br /><br />
         <div id="description" style="padding-bottom: 38%;">
             Vulnerable people in emergency scenarios are often stripped of their dignity and self-determination. Assistance often comes too late, disconnected with people’s real needs. Aid workers struggle to keep up with the changing situation on the ground.
             <br /> <br />
@@ -66,7 +79,6 @@
 
     <section id="story">
         <span id="headline-start">OUR STORY &nbsp</span> <span id="headline-end"> HOW WE STARTED</span>
-        <br /><br /><br />
         <div id="description">
             <div id="short">
                 Our story begins in a refugee camp in Northern Greece in autumn 2016. We are volunteers with Drop In The Ocean - a Norwegian NGO. Our task is to distribute donations like clothes, hygiene products or food.
@@ -82,7 +94,6 @@
 
     <section id="why">
         <span id="headline-start">WHY IT WORKS &nbsp</span> <span id="headline-end"> AT A GLANCE</span>
-        <br /><br /><br />
         <div id="subtitle">
             Boxtribute is made by former coordinators and volunteers who have worked in the field and understand its challenges. It’s designed to work within the flow of an existing team and be ready to go in a month or less.
         </div>
@@ -115,7 +126,6 @@
 
     <section id="why">
         <span id="headline-start">WHY IT WORKS &nbsp</span> <span id="headline-end"> EVEN MORE</span>
-        <br /><br /><br />
         <div id="subheader">
             <div id="title"><strong>VIRTUAL CURRENCY & ORDER MANAGEMENT </strong></div>Take distribution to the next level! Use our shop system to issue <strong> virtual tokens </strong> to beneficiaries and <strong> set ‘prices’</strong> for shop items. Make an <strong> order to the warehouse</strong> when stock runs low.
         </div>
@@ -157,7 +167,6 @@
 
     <section id="why">
         <span id="headline-start">WHY IT WORKS &nbsp</span> <span id="headline-end"> Q&A</span>
-        <br /><br /><br />
         <div id="subheader">
             <div id="title"><strong>Q: Is Boxtribute only for refugee camps? </strong></div>
             <span style="font-size: 22px;" ><strong> A: </strong></span> <strong>Not at all!</strong> Although it is a solution that emerged from the intense need we saw in refugee detention centers, Boxtribute is meant to help support vulnerable people in any emergency and post-emergency crisis.
@@ -181,7 +190,6 @@
 
     <section id="who">
         <span id="headline-start">WHO WE ARE &nbsp</span> <span id="headline-end"> THE TEAM</span>
-        <br /><br /><br />
         <div id="subtitle" style="color: #AACFE3;">
             We are a diverse team of people from around the world brought together by a belief that we can and should use our skills to make a positive impact in the world. Boxtribute combines knowledge we’ve honed for years in the startup, technology, and logistics sectors with our experiences of what is needed on the ground. It’s a solution we are proud to stand behind.
         </div>
@@ -327,7 +335,6 @@
 
     <section id="partners">
         <span id="headline-start">PARTNERS &nbsp</span> <span id="headline-end"> WORK WITH US</span>
-        <br /><br /><br />
         <div id="elements">
             <div id="info">
                 <div id="title">11 LOCATIONS</div>
@@ -350,7 +357,7 @@
             “If [Boxtribute] could be rolled out to many other NGOs, I think it would make a lot of people’s lives a lot more easy.” &nbsp <div id="source">— old video, Drapen i Havet </div>
         </div>
         <div id="support">
-            Currently Supporting ....
+            Currently Supporting...
             <div id="elements">
                 <img src ="assets/partners/drop.png" style="padding: 8px"/>
                 <img src="assets/partners/R4R.png" style="padding: 8px"/>
@@ -367,7 +374,6 @@
 
     <section id="join">
         <span id="headline-start">JOIN US &nbsp</span> <span id="headline-end"> MAKE A DIFFERENCE</span>
-        <br /><br /><br />
         <div id="description"> <strong>Interested in getting involved?</strong> We are always on the lookout for talented and committed volunteers from all walks of life. We especially want to talk to you if you have experience and skills in the following areas:</div>
         <div id="subheader">
             <div id="title">
