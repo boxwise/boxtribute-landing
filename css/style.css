@@ -59,7 +59,7 @@ html {
 }
 
 #header {
-  height: 120px;
+  height: 90px;
   position: fixed;
   width: 100%;
   background-color: white;
@@ -75,7 +75,7 @@ html {
 
 .hamburger {
   padding: 15px;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-right: 5%;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -161,6 +161,7 @@ section {
 @media (max-width: 800px) {
   #logo {
     height: 100%;
+    width: auto;
   }
   #sidebar {
     display: none;
@@ -465,12 +466,6 @@ section {
   width: 50%;
 }
 
-@media (max-width: 800px) {
-  #partners #info {
-    width: 100%;
-  }
-}
-
 #partners #info #title {
   margin-top: 35px;
   color: #ef404a;
@@ -530,4 +525,16 @@ section {
 
 #join #subheader strong {
   color: white;
+}
+
+@media (max-width: 800px) {
+  #who #subtitle {
+    display: none;
+  }
+  #partners #info {
+    width: 100%;
+  }
+  #partners #support {
+    margin-left: 0%;
+  }
 }
