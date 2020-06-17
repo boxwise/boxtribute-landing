@@ -10,10 +10,6 @@ aside {
   width: 250px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 #logo {
   height: 120px;
   width: 243px;
@@ -41,7 +37,7 @@ html {
   text-decoration: none;
   font-family: 'Chivo', serif;
   font-weight: 900;
-  font-size: 16pt;
+  font-size: 21.33px;
   padding-left: 20px;
 }
 
@@ -90,10 +86,6 @@ html {
 }
 
 .hamburger:hover {
-  opacity: 0.7;
-}
-
-.hamburger.is-active:hover {
   opacity: 0.7;
 }
 
@@ -160,26 +152,6 @@ section {
   font-family: 'Chivo', serif;
 }
 
-@media (max-width: 800px) {
-  #logo {
-    height: 100%;
-    width: auto;
-  }
-  #sidebar {
-    display: none;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 100%;
-    z-index: 5;
-  }
-  #header {
-    display: inline;
-  }
-  section {
-    width: 90%;
-    padding-top: 125px;
-  }
-}
-
 /* styling of common elements for each page */
 
 #headline-start {
@@ -194,21 +166,6 @@ section {
   color: white;
   font-weight: 300;
   font-size: 50px;
-}
-
-@media (max-width: 800px) {
-  #headline-start {
-    font-size: 32pt;
-  }
-  #headline-start::after {
-    content: '\a';
-    white-space: pre;
-  }
-  #headline-end {
-    font-size: 32pt;
-    display: block;
-    direction: rtl;
-  }
 }
 
 #quote {
@@ -302,21 +259,12 @@ section {
   /* margin: auto; */
 }
 
-@media (max-width: 800px) {
-  #landing #info {
-    margin-top: 50%;
-    margin-left: 0%;
-  }
-  #landing #info #text {
-    font-size: 24px;
-  }
-}
-
 #landing #support {
   color: white;
   background-color: black;
+  margin: auto;
   border: 0;
-  width: 300px;
+  width: 250px;
   margin-top: 20%;
   border-radius: 30px;
   padding: 25px;
@@ -396,22 +344,6 @@ section {
 
 #story #stat {
   float: right;
-}
-
-#story #stat {
-  float: right;
-}
-
-@media (max-width: 800px) {
-  #story #headline-bottom {
-    font-size: 24pt;
-  }
-  #story #subheader-bottom {
-    font-size: 24pt;
-  }
-}
-
-#story #stat {
   color: #29335f;
 }
 
@@ -423,12 +355,6 @@ section {
 
 #story #description #short {
   width: 47%;
-}
-
-@media (max-width: 800px) {
-  #story #description #short {
-    width: 93%;
-  }
 }
 
 /* styling for why it works pages */
@@ -447,12 +373,6 @@ section {
 
 #why #elements {
   display: flex;
-}
-
-@media (max-width: 800px) {
-  #why #elements {
-    display: inline;
-  }
 }
 
 #why #outreach {
@@ -505,10 +425,10 @@ section {
   padding: 20px;
 }
 
-#who #profiles #profile #headshot:hover {
+/* #who #profiles #profile #headshot:hover {
   opacity: 60%;
   filter: grayscale(80%);
-}
+} */
 
 #partners {
   background: #aacfe3;
@@ -521,6 +441,7 @@ section {
 #partners #elements {
   display: flex;
   flex-wrap: wrap;
+  /* margin: auto; */
   width: 100%;
 }
 
@@ -551,6 +472,7 @@ section {
   font-size: 28.5px;
   margin-left: 10%;
   font-weight: bold;
+  align-self: center;
 }
 
 #partners #outreach {
@@ -592,7 +514,79 @@ section {
   padding-left: 3%;
 }
 
+#albatrot {
+  font-family: 'Chivo', serif;
+  font-weight: 300;
+  font-size: 12px;
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+}
+
 @media (max-width: 800px) {
+  #logo {
+    height: 100%;
+    width: auto;
+  }
+  #sidebar {
+    display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    z-index: 5;
+  }
+  #header {
+    display: inline;
+  }
+  section {
+    width: 93%;
+    padding-top: 125px;
+  }
+  #headline-start {
+    font-size: 32pt;
+  }
+  #headline-start::after {
+    content: '\a';
+    white-space: pre;
+  }
+  #headline-end {
+    font-size: 32pt;
+    display: block;
+    direction: rtl;
+  }
+  #landing #info {
+    margin-top: 50%;
+    margin-left: 0%;
+  }
+  #landing #info #text {
+    font-size: 24px;
+  }
+  #story #headline-bottom {
+    font-size: 24pt;
+  }
+  #story #subheader-bottom {
+    font-size: 24pt;
+  }
+  #story #description #short {
+    width: 93%;
+  }
+  #story #li-1 {
+    padding-left: 0;
+  }
+  #story #li-2 {
+    padding-left: 0;
+  }
+  #story #li-3 {
+    padding-left: 0;
+  }
+  #story #stat {
+    display: none;
+  }
+  #story #stat #stat-label {
+    display: none;
+  }
+  #why #elements {
+    display: inline;
+  }
   #who #subtitle {
     display: none;
   }
@@ -602,13 +596,23 @@ section {
   #partners #support {
     margin-left: 0%;
   }
+  #join #subheader strong {
+    font-size: 24px;
+  }
 }
 
-#albatrot {
-  font-family: 'Chivo', serif;
-  font-weight: 300;
-  font-size: 12px;
-  position: fixed;
-  bottom: 5px;
-  left: 5px;
+@media (max-width: 415px) {
+  #who #profiles #profile {
+    max-width: 50%;
+    padding-left: 0;
+  }
+  #partners #support #elements img {
+    max-width: 27%;
+  }
+  #story #photos {
+    flex-wrap: wrap;
+  }
+  #story #photos img {
+    width: 100%;
+  }
 }
