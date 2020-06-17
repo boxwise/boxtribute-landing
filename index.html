@@ -48,6 +48,10 @@
           document.getElementById("navOptions").style.marginTop = "120px";
           document.getElementById("close").style.display="inline";
         }
+
+        function openDonate() {
+            window.open('https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8P3SYKKUPMPN&source=url')
+        }
         
         function closeNav() {
           document.getElementById("sidebar").style.display = "none";
@@ -57,9 +61,9 @@
     <div>
     <section id="landing">
         <div id="info">
-            <div id="text">Boxtribute works hand-in-hand with actors in the field to deliver humanitarian aid to people quickly and fairly. </div>
+            <div id="text">Boxtribute works hand-in-hand with our partners in the field to deliver humanitarian aid to people quickly and fairly. </div>
         </div>
-        <button id="support">SUPPORT OUR MISSION & DONATE</button>
+        <button id="support" onclick="openDonate()">SUPPORT OUR MISSION & DONATE</button>
     </section>
 
     <section id="story">
@@ -195,14 +199,14 @@
         </div>
         <div id="subheader">
             <div id="title"><strong>Q: Is Boxtribute open source? </strong></div>
-            <span style="font-size: 22px;" ><strong>A: </strong></span> <strong> Yes! </strong> You can read our source code here and our licensing terms here (Apache 2.0).
+            <span style="font-size: 22px;" ><strong>A: </strong></span> <strong> Yes! </strong> You can read our source code <a href="https://github.com/boxwise">here</a> and our licensing terms <a href=https://github.com/boxwise/dropapp/blob/master/LICENSE>here</a> (Apache 2.0).
         </div>
         <div id="subheader">
             <div id="title"><strong> Q: Didn’t you have another name before? </strong> </div>
             <span style="font-size: 22px;" ><strong> A: </strong> </span> <strong> Yes, our previous name was Boxwise. </strong> We changed our name to avoid getting mixed up with other companies and logistics systems with the same name, and to showcase our commitment to humanitarian causes.
         </div>
         <div id="outreach">
-            To ask us more questions, see a free demo, or for any other inquiries, reach us at <strong> hello@boxwise.co</strong> - we read every email!
+            To ask us more questions, see a free demo, or for any other inquiries, reach us at <strong> <a href="mailto:hello@boxwise.co" style="color:000000;">hello@boxwise.co</a></strong> - we read every email!
         </div>
     </section>
 
@@ -365,11 +369,11 @@
             <div id="info">
                 <div id="title">3 COUNTRIES</div>
                 <div id="description">
-                    <strong> Lebanon </strong> - has the highest per capita proportion of refugees in the world. Half live in extreme poverty.[1] 
+                    <strong> Lebanon </strong> - has the highest per capita proportion of refugees in the world. Half live in extreme poverty. <a href='https://data2.unhcr.org/en/documents/details/73118'>[1]</a>
                     <br />
                     <strong> Greece </strong> - the epicenter of the EU refugee crisis in 2016 & 2019. 
                     <br />
-                    <strong> Germany </strong> - largest economy in the EU, and second largest governmental donor to the UNHCR.[2]
+                    <strong> Germany </strong> - largest economy in the EU, and second largest governmental donor to the UNHCR. <a href="https://www.unhcr.org/partners/donors/5baa00b24/2019-unhcr-donor-ranking.html">[2]</a>
                 </div>
             </div>
         </div>
@@ -379,22 +383,22 @@
         <div id="support">
             Currently Supporting...
             <div id="elements">
-                <img src ="assets/partners/drop.png" style="padding: 8px"/>
-                <img src="assets/partners/R4R.png" style="padding: 8px"/>
-                <img src="assets/partners/iha.png" style="padding: 8px"/>
-                <img src="assets/partners/salam.png" style="padding: 8px"/>
-                <img src="assets/partners/Logo_rund_HERMINE-80.png" style="padding: 8px"/>
-                <img src="assets/partners/liftinghands.png" style="padding: 8px"/>
+                <a href="https://www.drapenihavet.no/en/home/"><img src ="assets/partners/drop.png" style="padding: 8px"/></a>
+                <a href="https://refugee4refugees.gr/"><img src="assets/partners/R4R.png" style="padding: 8px"/></a>
+                <a href="https://www.iha.help/"><img src="assets/partners/iha.png" style="padding: 8px"/></a>
+                <a href="https://salamladc.org/"><img src="assets/partners/salam.png" style="padding: 8px"/></a>
+                <a href="http://www.mfh.global/hermine"><img src="assets/partners/Logo_rund_HERMINE-80.png" style="padding: 8px"/></a>
+                <a href="https://www.liftinghandsinternational.org/"><img src="assets/partners/liftinghands.png" style="padding: 8px"/></a>
             </div>
             <div id="outreach">
-                Interested in working with us, or know people who would be? <strong> Write us at hello@boxwise.co! </strong>
+                Interested in working with us, or know people who would be? <strong> Write us at <a href="mailto:hello@boxwise.co">hello@boxwise.co!</a> </strong>
             </div>
         </div>
     </section>
 
     <section id="join">
         <span id="headline-start">JOIN US &nbsp</span> <span id="headline-end"> MAKE A DIFFERENCE</span>
-        <div id="description"> <strong>Interested in getting involved? Write us at hello@boxwise.co! </strong> We are always on the lookout for talented and committed volunteers from all walks of life. We especially want to talk to you if you have experience and skills in the following areas:</div>
+        <div id="description"> <strong>Interested in getting involved? Write us at <a href="mailto:hello@boxwise.co" style="color:#000000;">hello@boxwise.co!</a> </strong> We are always on the lookout for talented and committed volunteers from all walks of life. We especially want to talk to you if you have experience and skills in the following areas:</div>
         <div id="subheader">
             <div id="title">
                 <strong>CREATIVE</strong>
