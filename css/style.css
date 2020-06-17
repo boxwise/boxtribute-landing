@@ -264,7 +264,7 @@ section {
   background-color: black;
   margin: auto;
   border: 0;
-  width: 300px;
+  max-width: 300px;
   margin-top: 20%;
   border-radius: 30px;
   padding: 25px;
@@ -351,12 +351,6 @@ section {
   color: #29335f;
 }
 
-/* styling for start page */
-
-#story #description #short {
-  width: 47%;
-}
-
 /* styling for why it works pages */
 
 #why {
@@ -425,10 +419,10 @@ section {
   padding: 20px;
 }
 
-/* #who #profiles #profile #headshot:hover {
+#who #profiles #profile #headshot:hover {
   opacity: 60%;
   filter: grayscale(80%);
-} */
+}
 
 #partners {
   background: #aacfe3;
@@ -569,9 +563,6 @@ section {
   }
   #story #subheader-bottom {
     font-size: 24pt;
-  }
-  #story #description #short {
-    width: 93%;
   }
   #story #li-1 {
     padding-left: 0;
