@@ -605,18 +605,18 @@ section {
   }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 414px) {
   #who #profiles #profile {
     max-width: 50%;
     padding-left: 0;
   }
-  #partners #support #elements img {
-    max-width: 27%;
+  #partners #support #elements a {
+    max-width: 50%;
   }
   #story #photos {
     flex-wrap: wrap;
   }
   #story #photos img {
-    width: 100%;
+    width: 90%;
   }
 }
