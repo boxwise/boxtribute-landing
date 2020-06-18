@@ -602,11 +602,11 @@ section {
   #partners #support #elements a {
     max-width: 50%;
   }
-  #story #photos {
+  /* #story #photos {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start; /* new */
-  }
+    align-items: flex-start; new
+  } */
   #story #photos img {
     width: 90%;
   }
