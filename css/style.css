@@ -331,14 +331,13 @@ section {
 }
 
 #story #photos {
-  display: flex;
   margin-top: 15px;
 }
 
 #story #photos img {
-  margin: auto;
+  /* margin: auto; */
+  width: 46.5%;
   height: auto;
-  width: 50%;
   padding: 10px;
 }
 
@@ -605,6 +604,7 @@ section {
     max-width: 50%;
   }
   #story #photos {
+    display: flex;
     flex-wrap: wrap;
   }
   #story #photos img {
