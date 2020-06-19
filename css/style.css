@@ -1,7 +1,8 @@
 /* General page and sidebar styling */
 
 * {
-  margin: 0;
+  margin: 0px;
+  margin-top: -2.5px;
   padding: 0;
 }
 
@@ -11,6 +12,7 @@ aside {
 }
 
 #logo {
+  margin-top: 5px;
   height: 120px;
   width: 243px;
 }
@@ -143,7 +145,7 @@ aside {
 }
 
 section {
-  padding-top: 8%;
+  padding-top: 6%;
   padding-left: 6%;
   padding-right: 4%;
   width: 70%;
@@ -177,7 +179,7 @@ section {
   font-size: 21.33px;
   color: #315c88;
   margin: auto;
-  width: 70%;
+  width: 75%;
   padding: 25px;
 }
 
@@ -232,11 +234,12 @@ section {
 /* styling for landing page */
 
 #landing {
-  background-color: #aacfe3;
-  background-image: url('../assets/hero_image_shop.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: #aacfe3 url('../assets/hero_image_shop.png') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 105%;
+  background-position: top center;
   text-align: center;
   padding-bottom: 20%;
   padding-top: 25px;
@@ -472,7 +475,7 @@ section {
   font-size: 16px;
   font-weight: normal;
   margin-top: 20px;
-  padding-bottom: 10%;
+  padding-bottom: 12%;
 }
 
 /* styling for join us page  */
@@ -517,6 +520,7 @@ section {
 
 @media (max-width: 800px) {
   #logo {
+    margin-top: 0;
     height: 100%;
     width: auto;
   }
@@ -544,6 +548,9 @@ section {
     font-size: 32pt;
     display: block;
     direction: rtl;
+  }
+  #landing {
+    background-size: cover;
   }
   #landing #info {
     margin-top: 50%;
