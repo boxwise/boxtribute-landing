@@ -20,7 +20,7 @@ aside {
 #sidebar {
   position: fixed;
   background: white;
-  height: 100%;
+  height: 105%;
   transition: 400ms;
 }
 
@@ -47,7 +47,7 @@ aside {
   font-family: 'Open Sans', sans-serif;
   size: 16px;
   color: #29335f;
-  bottom: 50px;
+  bottom: 60px;
   position: absolute;
   padding-left: 16px;
 }
