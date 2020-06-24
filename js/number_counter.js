@@ -20,11 +20,10 @@ $(window).scroll(function () {
           },
           complete: function () {
             $this.text(this.countNum);
-            //alert('finished');
           },
         }
       );
     });
-    a = 1;
+    //a = 1;
   }
 });
