@@ -408,7 +408,7 @@ section {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   font-weight: lighter;
-  max-width: 150px;
+  max-width: 135px;
 }
 
 #who #profiles #profile strong {
@@ -635,17 +635,12 @@ section {
 
 @media (max-width: 414px) {
   #who #profiles #profile {
-    max-width: 50%;
+    max-width: 45%;
     padding-left: 0;
   }
   #partners #support #elements a {
     max-width: 50%;
   }
-  /* #story #photos {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start; new
-  } */
   #story #photos img {
     width: 90%;
   }
