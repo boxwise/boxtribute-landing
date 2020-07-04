@@ -538,14 +538,14 @@ section {
     padding-top: 125px;
   }
   #headline-start {
-    font-size: 27px;
+    font-size: 30px;
   }
   #headline-start::after {
     content: '\a';
     white-space: pre;
   }
   #headline-end {
-    font-size: 27px;
+    font-size: 30px;
     display: block;
     margin-right: 15px;
     direction: rtl;
@@ -578,15 +578,15 @@ section {
     font-size: 22px;
   }
   #story #li-1 {
-    font-size: 15px;
+    font-size: 18px;
     padding-left: 0;
   }
   #story #li-2 {
-    font-size: 15px;
+    font-size: 18px;
     padding-left: 0;
   }
   #story #li-3 {
-    font-size: 15px;
+    font-size: 18px;
     padding-left: 0;
   }
   #story #stat {
