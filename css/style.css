@@ -408,6 +408,7 @@ section {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   font-weight: lighter;
+  max-width: 150px;
 }
 
 #who #profiles #profile strong {
@@ -613,6 +614,10 @@ section {
   }
   #who #subtitle {
     display: none;
+  }
+  #who #profiles #profile #headshot img{
+    width: 100%;
+    height: auto;
   }
   #partners #info {
     width: 100%;
