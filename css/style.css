@@ -406,17 +406,23 @@ section {
   padding-top: 1%;
   color: #aacfe3;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: lighter;
 }
 
 #who #profiles #profile strong {
   color: white;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 #who #profiles #profile #headshot {
   padding: 20px;
+}
+
+#who #profiles #profile #headshot img {
+  padding-top: 20px;
+  height: 100px;
+  width: 100px;
 }
 
 /* #who #profiles #profile #headshot:hover {
