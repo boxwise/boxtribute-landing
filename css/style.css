@@ -543,19 +543,6 @@ section {
     width: 93%;
     padding-top: 125px;
   }
-  #headline-start {
-    font-size: 30px;
-  }
-  #headline-start::after {
-    content: '\a';
-    white-space: pre;
-  }
-  #headline-end {
-    font-size: 30px;
-    display: block;
-    margin-right: 15px;
-    direction: rtl;
-  }
   #quote {
     text-align: left;
     font-size: 15px;
@@ -634,6 +621,19 @@ section {
 }
 
 @media (max-width: 414px) {
+  #headline-start {
+    font-size: 30px;
+  }
+  #headline-start::after {
+    content: '\a';
+    white-space: pre;
+  }
+  #headline-end {
+    font-size: 30px;
+    display: block;
+    margin-right: 15px;
+    direction: rtl;
+  }
   #who #profiles #profile {
     max-width: 45%;
     padding-left: 0;
