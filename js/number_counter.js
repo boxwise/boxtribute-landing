@@ -15,11 +15,10 @@ $(window).scroll(function () {
           duration: 3000,
           easing: 'swing',
           step: function () {
-            $this.text(Math.floor(this.countNum));
-            console.log(this.countNum)
+            $this.text(Math.floor(this.countNum).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
           },
           complete: function () {
-            $this.text(this.countNum);
+            $this.text(this.countNum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
           },
         }
       );
