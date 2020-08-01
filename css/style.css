@@ -19,6 +19,7 @@ aside {
 
 #sidebar {
   position: fixed;
+  display: block;
   background: white;
   height: 105%;
   transition: 400ms;
@@ -639,7 +640,10 @@ section {
     padding-left: 0;
   }
   #partners #support #elements a {
-    max-width: 50%;
+    width: 33%;
+  }
+  #partners #support #elements img {
+    width: 85%;
   }
   #story #photos img {
     width: 90%;
