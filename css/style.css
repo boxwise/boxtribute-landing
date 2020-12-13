@@ -488,7 +488,7 @@ section {
 }
 
 #partners #headline-start {
-  color: #000000;
+  color: #315c88;
 }
 
 #partners #headline-end {
@@ -508,7 +508,7 @@ section {
 
 #partners #info #title {
   margin-top: 35px;
-  color: #e4aa4f;
+  color: #315c88;
   text-align: center;
   font-family: "Chivo", serif;
   /* font-weight: bold; */
@@ -581,6 +581,56 @@ section {
 }
 
 @media (max-width: 800px) {
+  #navOptions #story-li.active {
+    background-color: #ffffff;
+    padding-top: 15;
+    padding-bottom: 15;
+  }
+
+  #navOptions #why-li.active {
+    background-color: #ffffff;
+    padding-top: 15;
+    padding-bottom: 15;
+  }
+
+  #navOptions #who-li.active {
+    background-color: #ffffff;
+    padding-top: 15;
+    padding-bottom: 15;
+  }
+
+  #navOptions #partners-li.active {
+    background-color: #ffffff;
+    padding-top: 15;
+    padding-bottom: 15;
+  }
+
+  #navOptions #join-li.active {
+    background-color: #ffffff;
+    padding-top: 15;
+    padding-bottom: 15;
+  }
+
+  #navOptions #story-li.active a {
+    color: #ef404a;
+  }
+
+  #navOptions #why-li.active a {
+    color: #ef404a;
+  }
+
+  #navOptions #who-li.active a {
+    color: #ef404a;
+  }
+
+  #navOptions #partners-li.active a {
+    color: #ef404a;
+  }
+
+  #navOptions #join-li.active a {
+    color: #ef404a;
+  }
+
   #logo {
     margin-top: 0;
     height: 100%;
