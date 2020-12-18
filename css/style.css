@@ -73,44 +73,31 @@ aside {
   padding: 5px;
 }
 
-#navOptions #story-li.active {
-  background-color: #aacfe3;
+#navOptions li.active {
   padding-top: 25;
   padding-bottom: 25;
   transform: scale(1);
   transition: 0.2s all ease;
+}
+
+#navOptions #story-li.active {
+  background-color: #aacfe3;
 }
 
 #navOptions #why-li.active {
   background-color: #f4e6a0;
-  padding-top: 25;
-  padding-bottom: 25;
-  transform: scale(1);
-  transition: 0.2s all ease;
 }
 
 #navOptions #who-li.active {
   background-color: #315c88;
-  padding-top: 25;
-  padding-bottom: 25;
-  transform: scale(1);
-  transition: 0.2s all ease;
 }
 
 #navOptions #partners-li.active {
   background-color: #aacfe3;
-  padding-top: 25;
-  padding-bottom: 25;
-  transform: scale(1);
-  transition: 0.2s all ease;
 }
 
 #navOptions #join-li.active {
   background-color: #f37167;
-  padding-top: 25;
-  padding-bottom: 25;
-  transform: scale(1);
-  transition: 0.2s all ease;
 }
 
 #navOptions #story-li.active a {
@@ -591,53 +578,13 @@ section {
 }
 
 @media (max-width: 800px) {
-  #navOptions #story-li.active {
+  #navOptions li.active {
     background-color: #ffffff;
     padding-top: 15;
     padding-bottom: 15;
   }
 
-  #navOptions #why-li.active {
-    background-color: #ffffff;
-    padding-top: 15;
-    padding-bottom: 15;
-  }
-
-  #navOptions #who-li.active {
-    background-color: #ffffff;
-    padding-top: 15;
-    padding-bottom: 15;
-  }
-
-  #navOptions #partners-li.active {
-    background-color: #ffffff;
-    padding-top: 15;
-    padding-bottom: 15;
-  }
-
-  #navOptions #join-li.active {
-    background-color: #ffffff;
-    padding-top: 15;
-    padding-bottom: 15;
-  }
-
-  #navOptions #story-li.active a {
-    color: #ef404a;
-  }
-
-  #navOptions #why-li.active a {
-    color: #ef404a;
-  }
-
-  #navOptions #who-li.active a {
-    color: #ef404a;
-  }
-
-  #navOptions #partners-li.active a {
-    color: #ef404a;
-  }
-
-  #navOptions #join-li.active a {
+  #navOptions li.active a {
     color: #ef404a;
   }
 

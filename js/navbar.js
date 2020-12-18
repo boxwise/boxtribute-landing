@@ -1,6 +1,6 @@
 var lastId,
     topMenu = $("#navOptions"),
-    //topMenuHeight = topMenu.outerHeight()+15,
+    topMenuHeight = topMenu.outerHeight(),
     // All list items
     menuItems = topMenu.find("a"),
     // Anchors corresponding to menu items
@@ -13,7 +13,7 @@ var lastId,
 // Bind to scroll
 $(window).scroll(function() {
    // Get container scroll position
-   var fromTop = $(this).scrollTop() + 20 //+topMenuHeight;
+   var fromTop = $(this).scrollTop() + topMenuHeight
    
    // Get id of current scroll item
    var cur = scrollItems.map(function(){
@@ -32,12 +32,3 @@ $(window).scroll(function() {
          .end().filter("[href='#"+id+"']").parent().addClass("active");
    }                   
 });
-
-// $(window).scroll(function () {
-//     $('section').each(function(index) {
-//         var $this = $(this)
-//         var oTop = $this.offset().top - window.innerHeight;
-//         if(a == index && $(window).scrollTop() > oTop) {
-//         }
-//     })
-// })
