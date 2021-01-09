@@ -18,7 +18,7 @@
 
 aside {
   float: right;
-  width: 250px;
+  width: 253px;
 }
 
 #empty-paragraph {
@@ -52,14 +52,14 @@ aside {
 #sidebar ul li a {
   color: #29335f;
   text-decoration: none;
-  font-family: 'Chivo', serif;
+  font-family: "Chivo", serif;
   font-weight: 900;
   font-size: 21.33px;
   padding-left: 20px;
 }
 
 #sidebar #social {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   size: 16px;
   color: #29335f;
   bottom: 60px;
@@ -86,6 +86,55 @@ aside {
   float: right;
   padding: 5px;
 }
+
+#navOptions li.active {
+  padding-top: 25;
+  padding-bottom: 25;
+  transform: scale(1);
+  transition: 0.2s all ease;
+}
+
+#navOptions #story-li.active {
+  background-color: #aacfe3;
+}
+
+#navOptions #why-li.active {
+  background-color: #f4e6a0;
+}
+
+#navOptions #who-li.active {
+  background-color: #315c88;
+}
+
+#navOptions #partners-li.active {
+  background-color: #aacfe3;
+}
+
+#navOptions #join-li.active {
+  background-color: #f37167;
+}
+
+#navOptions #story-li.active a {
+  color: #ef404a;
+}
+
+#navOptions #why-li.active a {
+  color: #ef404a;
+}
+
+#navOptions #who-li.active a {
+  color: #e4aa4f;
+}
+
+#navOptions #partners-li.active a {
+  color: #e4aa4f;
+}
+
+#navOptions #join-li.active a {
+  color: #ffffff;
+}
+
+/* hamburger icon */
 
 .hamburger {
   padding: 15px;
@@ -140,7 +189,7 @@ aside {
 
 .hamburger-inner::before,
 .hamburger-inner::after {
-  content: '';
+  content: "";
   display: block;
 }
 
@@ -166,28 +215,28 @@ section {
   width: 70%;
   box-shadow: -60px 0px 70px -90px rgba(0, 0, 0, 0.2),
     60px 0px 70px -90px rgba(0, 0, 0, 0.19);
-  font-family: 'Chivo', serif;
+  font-family: "Chivo", serif;
 }
 
 /* styling of common elements for each page */
 
 #headline-start {
-  font-family: 'Chivo', serif;
+  font-family: "Chivo", serif;
   color: white;
   font-weight: 900;
   font-size: 50px;
 }
 
 #headline-end {
-  font-family: 'Chivo', serif;
-  color: #D89016;
+  font-family: "Chivo", serif;
+  color: white;
   font-weight: 300;
   font-size: 50px;
 }
 
 #quote {
   letter-spacing: 0px;
-  font-family: 'Open Sans', serif;
+  font-family: "Open Sans", serif;
   font-style: italic;
   text-align: center;
   font-size: 1.1rem;
@@ -203,7 +252,7 @@ section {
 
 #subtitle {
   text-align: left;
-  font-family: 'Open Sans', serif;
+  font-family: "Open Sans", serif;
   margin-top: 10px;
   font-size: 16px;
   letter-spacing: 0px;
@@ -214,7 +263,7 @@ section {
 #subheader {
   padding-top: 25px;
   text-align: left;
-  font-family: 'Open Sans', serif;
+  font-family: "Open Sans", serif;
   letter-spacing: 0px;
   font-size: 16px;
   color: #29335f;
@@ -227,7 +276,7 @@ section {
 }
 
 #stat {
-  font-family: 'Chivo', serif;
+  font-family: "Chivo", serif;
   font-weight: bold;
   font-size: 60px;
   letter-spacing: 0px;
@@ -248,7 +297,7 @@ section {
 /* styling for landing page */
 
 #landing {
-  background: #aacfe3 url('../assets/hero_image_shop.png') no-repeat;
+  background: #aacfe3 url("../assets/hero_image_shop.png") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -261,7 +310,7 @@ section {
 
 #landing #info {
   background-color: rgba(132, 134, 137, 0.6);
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   padding: 10px;
   padding-bottom: 30px;
@@ -285,7 +334,7 @@ section {
   margin-top: 20%;
   border-radius: 30px;
   padding: 25px;
-  font-family: 'Chivo', serif;
+  font-family: "Chivo", serif;
   font-weight: 900;
   font-size: 20px;
 }
@@ -302,12 +351,11 @@ section {
 
 #story #description {
   background-color: #aacfe3;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #29335f;
   width: 93%;
   letter-spacing: 0px;
-  margin-top: 30px;
   text-align: left;
   padding-bottom: 10%;
 }
@@ -331,7 +379,7 @@ section {
 }
 
 #story #headline-bottom {
-  font-family: 'Chivo', serif;
+  font-family: "Chivo", serif;
   font-weight: 900;
   text-align: center;
   font-size: 38px;
@@ -339,7 +387,7 @@ section {
 }
 
 #story #subheader-bottom {
-  font-family: 'Chivo', serif;
+  font-family: "Chivo", serif;
   font-weight: 300;
   text-align: center;
   font-size: 38px;
@@ -379,6 +427,10 @@ section {
 
   .two-by-two-grid{
     display: block;
+  }
+
+  #why #elements #quote {
+    margin-top: 0%;
   }
 }
 
@@ -444,7 +496,7 @@ section {
 #who #profiles #profile {
   padding-top: 1%;
   color: #aacfe3;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   font-weight: lighter;
   max-width: 135px;
@@ -481,7 +533,7 @@ section {
 }
 
 #join #description {
-  font-family: 'Open Sans', serif;
+  font-family: "Open Sans", serif;
   margin-top: 15px;
 }
 
@@ -492,7 +544,7 @@ section {
 
 #join #subheader strong {
   color: white;
-  font-family: 'Chivo', serif;
+  font-family: "Chivo", serif;
   font-weight: 300;
   font-size: 38px;
 }
@@ -502,7 +554,7 @@ section {
 }
 
 #albatrot {
-  font-family: 'Chivo', serif;
+  font-family: "Chivo", serif;
   font-weight: 300;
   font-size: 12px;
   position: fixed;
@@ -511,6 +563,16 @@ section {
 }
 
 @media (max-width: 800px) {
+  #navOptions li.active {
+    background-color: #ffffff;
+    padding-top: 15;
+    padding-bottom: 15;
+  }
+
+  #navOptions li.active a {
+    color: #ef404a;
+  }
+
   #logo {
     margin-top: 0;
     height: 100%;
@@ -582,13 +644,13 @@ section {
   #why #outreach {
     font-size: 16px;
   }
-  #subheader #title{
+  #subheader #title {
     font-size: 18px;
   }
   #who #subtitle {
     display: none;
   }
-  #who #profiles #profile #headshot img{
+  #who #profiles #profile #headshot img {
     width: 100%;
     height: auto;
   }
@@ -611,7 +673,7 @@ section {
     font-size: 30px;
   }
   #headline-start::after {
-    content: '\a';
+    content: "\a";
     white-space: pre;
   }
   #headline-end {
