@@ -1,4 +1,5 @@
-var lastId,
+var lastScrollId,
+    lastSubId,
     topMenu = $("#navOptions"),
     topMenuHeight = topMenu.outerHeight(),
     // All list items
@@ -6,7 +7,11 @@ var lastId,
     // Anchors corresponding to menu items
     scrollItems = menuItems.map(function(){
       var item = $($(this).attr("href"));
-      if (item.length) { return item; }
+      if (item.length && !$(item[0].parentElement).attr("id")) { return item; }
+    }),
+    subItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length && $(item[0].parentElement).attr("id")) { return item; }
     });
 
 
@@ -24,11 +29,25 @@ $(window).scroll(function() {
    cur = cur[cur.length-1];
    var id = cur && cur.length ? cur[0].id : "";
    
-   if (lastId !== id) {
-       lastId = id;
+   if (lastScrollId !== id) {
        // Set/remove active class
-       menuItems
-         .parent().removeClass("active")
-         .end().filter("[href='#"+id+"']").parent().addClass("active");
-   }                   
+       menuItems.parent().end().filter("[href='#"+lastScrollId+"']").parent().removeClass("active");
+       lastScrollId = id;
+       menuItems.parent().end().filter("[href='#"+id+"']").parent().addClass("active");
+   }  
+
+  var subCur = subItems.map(function(){
+     if ($(this).offset().top < fromTop)
+       return this;
+   });
+   // Get the id of the current element
+   subCur = subCur[subCur.length-1];
+   var subId = subCur && subCur.length ? subCur[0].id : "";
+   
+   if (lastSubId !== subId) {
+       // Set/remove active class
+       menuItems.parent().end().filter("[href='#"+lastSubId+"']").removeClass("active");
+       lastSubId = subId;
+       menuItems.parent().end().filter("[href='#"+subId+"']").addClass("active");
+   }  
 });

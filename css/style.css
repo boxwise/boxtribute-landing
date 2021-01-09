@@ -8,13 +8,13 @@
 
 aside {
   float: right;
-  width: 253px;
+  width: 19%;
 }
 
 #logo {
-  margin-top: 5px;
-  height: 120px;
-  width: 243px;
+  margin-top: 2%;
+  width: 90%;
+  margin-left: 5%;
 }
 
 #sidebar {
@@ -31,7 +31,7 @@ aside {
 }
 
 #sidebar ul li {
-  padding: 16px 16px;
+  padding: 14px 14px;
   box-sizing: border-box;
 }
 
@@ -40,7 +40,7 @@ aside {
   text-decoration: none;
   font-family: "Chivo", serif;
   font-weight: 900;
-  font-size: 21.33px;
+  font-size: 21px;
   padding-left: 20px;
 }
 
@@ -48,7 +48,7 @@ aside {
   font-family: "Open Sans", sans-serif;
   size: 16px;
   color: #29335f;
-  bottom: 60px;
+  bottom: 30px;
   position: absolute;
   padding-left: 16px;
 }
@@ -118,6 +118,27 @@ aside {
 
 #navOptions #join-li.active a {
   color: #ffffff;
+}
+
+#navOptions li div#subNav {
+  display: none;
+}
+
+#navOptions li.active div#subNav {
+  display: inline;
+}
+
+#navOptions li.active div#subNav a {
+  display: inline-block;
+  color: #848689;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  font-size: 15.5px;
+}
+
+#navOptions li.active div#subNav a.active {
+  color: #315c88;
 }
 
 /* hamburger icon */
@@ -198,7 +219,7 @@ section {
   padding-top: 6%;
   padding-left: 6%;
   padding-right: 4%;
-  width: 70%;
+  width: 71%;
   box-shadow: -60px 0px 70px -90px rgba(0, 0, 0, 0.2),
     60px 0px 70px -90px rgba(0, 0, 0, 0.19);
   font-family: "Chivo", serif;
@@ -578,13 +599,32 @@ section {
 }
 
 @media (max-width: 800px) {
-  #navOptions li.active {
-    background-color: #ffffff;
-    padding-top: 15;
-    padding-bottom: 15;
+  aside {
+    width: 60%;
   }
 
-  #navOptions li.active a {
+  #sidebar ul li.active {
+    background-color: #ffffff !important;
+  }
+
+  #navOptions li.active {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  #navOptions #who-li.active a {
+    color: #ef404a;
+  }
+
+  #navOptions #partners-li.active a {
+    color: #ef404a;
+  }
+
+  #navOptions #join-li.active a {
+    color: #ef404a;
+  }
+
+  #navOptions li.active div#subNav a.active {
     color: #ef404a;
   }
 
