@@ -134,7 +134,9 @@ aside {
   margin-left: 10%;
   margin-top: 5%;
   margin-bottom: 2%;
+  font-family: "Open Sans", serif;
   font-size: 15.5px;
+  font-weight: 700;
 }
 
 #navOptions li.active div#subNav a.active {
@@ -626,6 +628,12 @@ section {
 
   #navOptions li.active div#subNav a.active {
     color: #ef404a;
+  }
+
+  #navOptions li.active div#subNav a {
+    margin-left: 4%;
+    margin-top: 1%;
+    margin-bottom: 1%;
   }
 
   #logo {
