@@ -104,18 +104,25 @@
 @media only screen and (max-width: 715px) {
 
   .partners-container{
-    justify-content: space-between;
     display: flex;
+    flex-wrap: wrap;
   }
 
   .locations {
+    order: 1;
+  }
+
+  .location-list{
     order: 2;
   }
 
   .partners {
-    order: 1;
+    order: 3;
   }
 
+  .partners-logos{
+    order: 4;
+  }
 }
 
 .locations{
@@ -176,11 +183,6 @@
 
 @media only screen and (max-width: 715px) {
 
-  .partners-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .logo-img{
     width: 70%;
     height: auto;
@@ -188,13 +190,5 @@
 
   .locations{
     margin-bottom: 3rem;
-  }
-
-  .mobile-right-to-top{
-    order: 1;
-  }
-  
-  .mobile-left-to-bottom{
-    order: 2;
   }
 }
