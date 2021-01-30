@@ -177,12 +177,24 @@
 @media only screen and (max-width: 715px) {
 
   .partners-container {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .logo-img{
-    width: 55%;
+    width: 70%;
     height: auto;
   }
-}
+
+  .locations{
+    margin-bottom: 3rem;
+  }
+
+  .mobile-right-to-top{
+    order: 1;
+  }
+  
+  .mobile-left-to-bottom{
+    order: 2;
+  }
 }
