@@ -434,6 +434,10 @@ section {
   }
 }
 
+#why #quote {
+  color: #315C88;
+}
+
 #why #elements #quote {
   margin-top: 10%;
 }
