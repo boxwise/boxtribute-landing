@@ -109,6 +109,8 @@
   }
 
   .locations {
+    display: inline;
+    width: 100%;
     order: 1;
   }
 
