@@ -103,28 +103,7 @@
 
 @media only screen and (max-width: 715px) {
 
-  .partners-container{
-    display: flex;
-    flex-wrap: wrap;
-  }
 
-  .locations {
-    display: inline;
-    width: 100%;
-    order: 1;
-  }
-
-  .location-list{
-    order: 2;
-  }
-
-  .partners {
-    order: 3;
-  }
-
-  .partners-logos{
-    order: 4;
-  }
 }
 
 .locations{
@@ -190,7 +169,28 @@
     height: auto;
   }
 
-  .locations{
-    margin-bottom: 3rem;
+  .partners-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .locations {
+    display: inline;
+    width: 100%;
+    order: 1;
+    margin-bottom: 2rem;
+  }
+
+  .location-list{
+    order: 2;
+  }
+
+  .partners {
+    order: 3;
+  }
+
+  .partners-logos{
+    order: 4;
+    margin-bottom: 10vh;
   }
 }
