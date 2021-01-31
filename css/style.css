@@ -426,7 +426,8 @@ section {
 @media only screen and (max-width: 915px) {
 
   .two-by-two-grid{
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   #why #elements #quote {
