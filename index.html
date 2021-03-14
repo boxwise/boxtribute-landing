@@ -1,4 +1,5 @@
 <html>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135092361-5"></script>
@@ -127,9 +128,6 @@
             “[Boxtribute is] super functional, so you actually don’t need that much training. It speaks [for] itself.” &nbsp <span id="source">— Laura Vigourt, volunteer at Drapen i Havet</span>
         </div>
 
-
-
-
         <div class="three-by-two-grid">
             
             <div class="first-row">
@@ -145,14 +143,13 @@
                 </div>
             </div>
 
-            <div class="second-row-left" style="padding-bottom: 10%;">
+            <div class="second-row-left">
                 <div>
                     <div id="subheader">
                         <div id="title">UNDERSTAND BENEFICIARIES</div> Register beneficiaries in a <strong>GDPR-compliant</strong> way! Organizations can see the <strong>population profile</strong> of their beneficiaries, making it easier to adjust distributions to fit.
                     </div>
                 </div>
             </div>
-
 
             <div id="subheader">
                 <div id = "title">ENABLE A FREE AND FAIR CHOICE</div>Transform the experience of receiving aid with our <strong> free shop system</strong>! Instead of a handout, people choose what they need for themselves.
@@ -448,6 +445,24 @@
     <script src="js/pagescroll.js"></script>
     <script src="js/number_counter.js"></script>
     <script src="js/navbar.js"></script>
+
+    <script>
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#000000"
+            },
+            "button": {
+              "background": "#ef404a"
+            }
+          },
+          "theme": "edgeless",
+          "position": "top",
+          "static": true,
+          "type": "opt-in"
+        });
+    </script>
+
   </body>
 </div>
 </html>
