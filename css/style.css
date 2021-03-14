@@ -435,6 +435,43 @@ section {
   }
 }
 
+.three-by-two-grid{
+  margin-top: 2vh;
+  display: grid;
+  grid-template-rows: 19vh 19vh 19vh;
+  grid-template-columns: 1fr 1fr;
+}
+
+.first-row{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.second-row-left{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.second-row-right{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+@media only screen and (max-width: 915px) {
+
+  .three-by-two-grid{
+
+    margin-top: 2vh;
+    display: inline-block;
+  }
+}
+
 #why #quote {
   color: #315C88;
 }
