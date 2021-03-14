@@ -1,4 +1,6 @@
 <html>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135092361-5"></script>
@@ -448,6 +450,22 @@
     <script src="js/pagescroll.js"></script>
     <script src="js/number_counter.js"></script>
     <script src="js/navbar.js"></script>
+    <script>
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#000000"
+            },
+            "button": {
+              "background": "#ef404a"
+            }
+          },
+          "theme": "edgeless",
+          "position": "top",
+          "static": true,
+          "type": "opt-in"
+        });
+    </script>
   </body>
 </div>
 </html>
