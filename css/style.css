@@ -1,5 +1,15 @@
-/* General page and sidebar styling */
+@import "partners.css";
 
+/* ### VARIABLES ### */
+:root{
+  --dark-blue: #29335F;
+  --blue: #315C88;
+  --gold: #D89016;
+  --red: #EF404A;
+  --bold: 1.8rem;
+}
+
+/* General page and sidebar styling */
 * {
   margin: 0px;
   margin-top: -2.5px;
@@ -8,13 +18,17 @@
 
 aside {
   float: right;
-  width: 19%;
+  width: 253px;
+}
+
+#empty-paragraph {
+  height: 2rem;
 }
 
 #logo {
-  margin-top: 2%;
-  width: 90%;
-  margin-left: 5%;
+  margin-top: 5px;
+  height: 120px;
+  width: 243px;
 }
 
 #sidebar {
@@ -31,7 +45,7 @@ aside {
 }
 
 #sidebar ul li {
-  padding: 14px 14px;
+  padding: 16px 16px;
   box-sizing: border-box;
 }
 
@@ -40,7 +54,7 @@ aside {
   text-decoration: none;
   font-family: "Chivo", serif;
   font-weight: 900;
-  font-size: 21px;
+  font-size: 21.33px;
   padding-left: 20px;
 }
 
@@ -48,7 +62,7 @@ aside {
   font-family: "Open Sans", sans-serif;
   size: 16px;
   color: #29335f;
-  bottom: 30px;
+  bottom: 60px;
   position: absolute;
   padding-left: 16px;
 }
@@ -118,29 +132,6 @@ aside {
 
 #navOptions #join-li.active a {
   color: #ffffff;
-}
-
-#navOptions li div#subNav {
-  display: none;
-}
-
-#navOptions li.active div#subNav {
-  display: inline;
-}
-
-#navOptions li.active div#subNav a {
-  display: inline-block;
-  color: #848689;
-  margin-left: 10%;
-  margin-top: 5%;
-  margin-bottom: 2%;
-  font-family: "Open Sans", serif;
-  font-size: 15.5px;
-  font-weight: 700;
-}
-
-#navOptions li.active div#subNav a.active {
-  color: #315c88;
 }
 
 /* hamburger icon */
@@ -221,7 +212,7 @@ section {
   padding-top: 6%;
   padding-left: 6%;
   padding-right: 4%;
-  width: 71%;
+  width: 70%;
   box-shadow: -60px 0px 70px -90px rgba(0, 0, 0, 0.2),
     60px 0px 70px -90px rgba(0, 0, 0, 0.19);
   font-family: "Chivo", serif;
@@ -248,8 +239,8 @@ section {
   font-family: "Open Sans", serif;
   font-style: italic;
   text-align: center;
-  font-size: 21.33px;
-  color: #315c88;
+  font-size: 1.1rem;
+  color: #29335F;
   margin: auto;
   width: 75%;
   padding: 25px;
@@ -286,7 +277,7 @@ section {
 
 #stat {
   font-family: "Chivo", serif;
-  font-weight: 900;
+  font-weight: bold;
   font-size: 60px;
   letter-spacing: 0px;
   color: #315c88;
@@ -425,6 +416,70 @@ section {
 
 /* styling for why it works pages */
 
+.two-by-two-grid{
+  margin-top: 2vh;
+  display: grid;
+  grid-template-rows: 14vh 14vh;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 915px) {
+
+  .two-by-two-grid{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #why #elements #quote {
+    margin-top: 0%;
+  }
+}
+
+.three-by-two-grid{
+  margin-top: 2vh;
+  display: grid;
+  grid-template-rows: 19vh 19vh 19vh;
+  grid-template-columns: 1fr 1fr;
+}
+
+.first-row{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.second-row-left{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.second-row-right{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+@media only screen and (max-width: 915px) {
+
+  .three-by-two-grid{
+
+    margin-top: 2vh;
+    display: inline-block;
+  }
+}
+
+#why #quote {
+  color: #315C88;
+}
+
+#why #elements #quote {
+  margin-top: 10%;
+}
+
 #why {
   background: #f4e6a0;
 }
@@ -442,14 +497,20 @@ section {
 }
 
 #why #outreach {
-  font-family: "Open Sans", sans-serif;
-  font-size: 21.33px;
-  font-weight: lighter;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
   text-align: center;
   margin: auto;
   margin-top: 40px;
-  color: #29335f;
+  color: #29335F;
   padding-bottom: 10%;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+#why #outreach #link {
+  text-decoration: none;
+  color: #29335F;
 }
 
 #why #checkbox {
@@ -503,63 +564,6 @@ section {
   filter: grayscale(80%);
 } */
 
-#partners {
-  background: #aacfe3;
-}
-
-#partners #headline-start {
-  color: #315c88;
-}
-
-#partners #headline-end {
-  color: #e4aa4f;
-}
-
-#partners #elements {
-  display: flex;
-  flex-wrap: wrap;
-  /* margin: auto; */
-  width: 100%;
-}
-
-#partners #info {
-  width: 50%;
-}
-
-#partners #info #title {
-  margin-top: 35px;
-  color: #315c88;
-  text-align: center;
-  font-family: "Chivo", serif;
-  /* font-weight: bold; */
-  font-size: 38px;
-  margin-right: 30px;
-}
-
-#partners #info #description {
-  margin-right: 30px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-}
-
-#partners #support {
-  margin-top: 4%;
-  color: #29335f;
-  font-family: "Open Sans", sans-serif;
-  font-size: 28.5px;
-  margin-left: 10%;
-  font-weight: bold;
-  align-self: center;
-}
-
-#partners #outreach {
-  color: #29335f;
-  font-size: 16px;
-  font-weight: normal;
-  margin-top: 20px;
-  padding-bottom: 12%;
-}
-
 /* styling for join us page  */
 
 #join {
@@ -601,39 +605,14 @@ section {
 }
 
 @media (max-width: 800px) {
-  aside {
-    width: 60%;
-  }
-
-  #sidebar ul li.active {
-    background-color: #ffffff !important;
-  }
-
   #navOptions li.active {
-    padding-top: 14px;
-    padding-bottom: 14px;
+    background-color: #ffffff;
+    padding-top: 15;
+    padding-bottom: 15;
   }
 
-  #navOptions #who-li.active a {
+  #navOptions li.active a {
     color: #ef404a;
-  }
-
-  #navOptions #partners-li.active a {
-    color: #ef404a;
-  }
-
-  #navOptions #join-li.active a {
-    color: #ef404a;
-  }
-
-  #navOptions li.active div#subNav a.active {
-    color: #ef404a;
-  }
-
-  #navOptions li.active div#subNav a {
-    margin-left: 4%;
-    margin-top: 1%;
-    margin-bottom: 1%;
   }
 
   #logo {
