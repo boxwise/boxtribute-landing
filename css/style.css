@@ -520,6 +520,55 @@ section {
   padding: 10px;
 }
 
+/*duplicate why styling for why-2 page */
+
+#why-2 #quote {
+  color: #315C88;
+}
+
+#why-2 #elements #quote {
+  margin-top: 10%;
+}
+
+#why-2 {
+  background: #f4e6a0;
+}
+
+#why-2 #headline-start {
+  color: #315c88;
+}
+
+#why-2 #headline-end {
+  color: #ef404a;
+}
+
+#why-2 #elements {
+  display: flex;
+}
+
+#why-2 #outreach {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+  color: #29335F;
+  padding-bottom: 10%;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+#why-2 #outreach #link {
+  text-decoration: none;
+  color: #29335F;
+}
+
+#why-2 #checkbox {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
 /* styling for who we are page */
 
 #who {
