@@ -645,6 +645,11 @@ section {
   padding-left: 3%;
 }
 
+#imprint {
+  padding-top: 0;
+  padding-bottom: 6%;
+}
+
 #albatrot {
   font-family: "Chivo", serif;
   font-weight: 300;
