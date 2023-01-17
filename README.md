@@ -1,3 +1,3 @@
 # boxtribute-landing
 
-The landing page for Boxtribute.
+**Archived ** The old HTML landing page for Boxtribute.
